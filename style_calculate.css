@@ -1,0 +1,49 @@
+#background {
+	margin: 0%;
+	text-align: center;
+}
+h2{
+	padding-top: 0%;
+	font-family: Lobster, Ravie;
+	color: SlateGray;  
+	padding-left: -10%;
+}
+h3{
+	padding-top: 0%;
+	font-family: Lobster, Ravie;
+	color: orange;    
+}
+h4
+{
+line-height:10px;
+font-family:Lobster, Jokerman;
+}
+#box {
+	background-color: darkgray;
+	border-radius: 5%;
+	width: 25%;
+	height: 60%;
+	margin-left:35%;
+	border:darkgray 1px solid;
+	z-index:3;
+}
+.display{
+	background-color:#222;
+	width:250px;
+	position:relative;
+	left:10px;
+	top:20px;
+	height:45px;
+	margin-left:7%;
+	font-weight:bold;
+}
+.display input{
+	position:relative;
+	left:0px;
+	top:2px;
+	height:35px;
+	color:black;
+	background-color:#bccd95;
+	font-size:21px;
+	text-align:right;
+}

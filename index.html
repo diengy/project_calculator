@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv = "Content-Type" content = "text/html"; charset = "utf-8">
+	
+	<head>
+		<title>Home</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "style_calculate.css"/>
+		<link rel = "stylesheet" type = "text/css" href = "style_button.css"/>
+	</head>
+	<script>
+		function a(val){
+			document.getElementById("d").value=val;
+		}
+		function b(val){
+			document.getElementById("d").value+=val;
+		}
+		function c(){ 
+			try { 
+			  a(eval(document.getElementById("d").value)) 
+			} 
+			catch(e){
+			  a('Error') 
+			} 
+		}
+		
+	</script>
+	<body background = "red">
+		<div id = "background">
+			<h2>This is My Calculator</h2>
+			<div id = "box">
+				<h3 style = "padding-top: 5%">Diêng's Caculator</h3>
+				<div class="display"><input type="text" readonly size="18" id="d"></div>
+				<div class="keys">
+					<table border = "0">
+						<tr>
+							<td><input type="button" class="button delete" value="AC" onclick='a("")'></td>
+							<td><input type="button" class="button delete" value="DE" onclick='a("")'></td>
+							<td><input type="button" class="button function" value="%" onclick='b("%")'></td>
+							<td><input type="button" class="button function" value="÷" onclick='b("/")'></td>
+						</tr>
+						<tr>
+							<td><input type="button" class="button number" value="7" onclick='b("7")'></td>
+							<td><input type="button" class="button number" value="8" onclick='b("8")'></td>
+							<td><input type="button" class="button number" value="9" onclick='b("9")'></td>
+							<td><input type="button" class="button function" value="X" onclick='b("*")'></td>
+						</tr>
+						<tr>
+							<td><input type="button" class="button number" value="4" onclick='b("4")'></td>
+							<td><input type="button" class="button number" value="5" onclick='b("5")'></td>
+							<td><input type="button" class="button number" value="6" onclick='b("6")'></td>
+							<td><input type="button" class="button function" value="-" onclick='b("-")'></td>
+						</tr>
+						<tr><td><input type="button" class="button number" value="1" onclick='b("1")'></td>
+							<td><input type="button" class="button number" value="2" onclick='b("2")'></td>
+							<td><input type="button" class="button number" value="3" onclick='b("3")'></td>
+							<td rowspan = "3"><input type="button" class="button daucong" value="+" onclick='b("+")'></td>
+						</tr>
+						<tr>
+							<td><input type="button" class="button number" value="0" onclick='b("0")'></td>
+							<td><input type="button" class="button number" value="." onclick='b(".")'></td>
+							<td><input type="button" class="button number" value="=" onclick='c()'></td>	
+						</tr>
+					</table>
+					<h4>Create by Y Diêng</h4>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

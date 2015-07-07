@@ -1,0 +1,61 @@
+.keys{
+	position:relative;
+	top:25px;
+	margin-left:5%;
+	padding-bottom:5%;
+}
+.button{
+	width:50px;
+	height:40px;
+	border:none;
+	border-radius:8px;
+	margin-left:14px;
+	cursor:pointer;
+	border-top:2px solid transparent;
+}
+.button.delete{
+	color:white;
+	background-color:FireBrick;
+	border-bottom:DarkRed 2px solid;
+	border-top:2px #6f6f6f solid;
+	border-radius: 20px 20px 5px 5px;
+}
+.button.daucong{
+	color:white;
+	background-color: DimGray;
+	border-bottom:black 2px solid;
+	height:90px;
+	width: 50px;
+	margin-top: 0px;
+}
+.button.number{
+	color:black;
+	background-color:FloralWhite;
+	border-bottom:black 2px solid;
+	border-top:2px 303030 solid;
+}
+.button.function{
+	color:white;
+	background-color:DimGray;
+	border-bottom:black 2px solid;
+	border-top:2px FF9933 solid;
+}
+.delete:active{
+	border-top:black 2px solid;
+	border-bottom:2px #6f6f6f solid;
+}
+.daucong:active
+{
+	border-top:black 2px solid;
+	border-bottom:#ff4561 2px solid;
+}
+.function:active
+{
+	border-top:black 2px solid;
+	border-bottom:#303030 2px solid;
+}
+.number:active
+{
+	border-top:black 2px solid;
+	border-bottom:FF9933 2px solid;
+}
